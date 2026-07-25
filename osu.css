@@ -26,10 +26,6 @@ body{
         min-width: width:100%; !important;
     }
 
-    .play-pp::before{
-        left: 5%;
-    }
-
     .foot{
        
         background-color: transparent !important;
