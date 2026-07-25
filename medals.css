@@ -1,0 +1,188 @@
+.medal-10, .medal-9, .medal-8, .medal-7, .medal-6, .medal-5, .medal-4, .medal-3, .medal-2, .medal-1, .medal-rythom-1, .medal-rythom-2, .medal-rythom-3, .medal-rythom-4, .medal-game-1, .medal-game-2, .medal-game-3, .medal-game-4, .medal-internet-1, .medal-internet-2, .medal-internet-3, .medal-internet-4, .medal-anime-1, .medal-anime-2, .medal-anime-3, .medal-anime-4, .medal-fc-1, .medal-fc-2, .medal-fc-3, .medal-fc-4, .medal-fc-5, .medal-fc-6, .medal-fc-7, .combo-1, .combo-2, .combo-3, .combo-4, .play-1, .play-2, .play-3, .play-4, .medalha-1, .medalha-2, .medalha-3, .medalha-4, .medalha-5, .medalha-6, .medalha-7 {
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    width: 70px;
+    height: 75px;
+}
+
+.medal-10 {
+    background-image: var(--medal-star-10);
+}
+.medal-9 {
+    background-image: var(--medal-star-9);
+}
+.medal-8 {
+    background-image: var(--medal-star-8);
+}
+.medal-7 {
+    background-image: var(--medal-star-7);
+}
+.medal-6 {
+    background-image: var(--medal-star-6);
+}
+.medal-5 {
+    background-image: var(--medal-star-5);
+}
+.medal-4 {
+    background-image: var(--medal-star-4);
+}
+.medal-3 {
+    background-image: var(--medal-star-3);
+}
+.medal-2 {
+    background-image: var(--medal-star-2);
+}
+.medal-1 {
+    background-image: var(--medal-star-1);
+}
+.medal-rythom-1 {
+    background-image: var(--medal-rhythm-1);
+}
+.medal-rythom-2 {
+    background-image: var(--medal-rhythm-2);
+}
+.medal-rythom-3 {
+    background-image: var(--medal-rhythm-3);
+}
+.medal-rythom-4 {
+    background-image: var(--medal-rhythm-4);
+}
+.medal-game-1 {
+    background-image: var(--medal-game-1);
+}
+.medal-game-2 {
+    background-image: var(--medal-game-2);
+}
+.medal-game-3 {
+    background-image: var(--medal-game-3);
+}
+.medal-game-4 {
+    background-image: var(--medal-game-4);
+}
+.medal-internet-1 {
+    background-image: var(--medal-internet-1);
+}
+.medal-internet-2 {
+    background-image: var(--medal-internet-2);
+}
+.medal-internet-3 {
+    background-image: var(--medal-internet-3);
+}
+.medal-internet-4 {
+    background-image: var(--medal-internet-4);
+}
+.medal-anime-1 {
+    background-image: var(--medal-anime-1);
+}
+.medal-anime-2 {
+    background-image: var(--medal-anime-2);
+}
+.medal-anime-3 {
+    background-image: var(--medal-anime-3);
+}
+.medal-anime-4 {
+    background-image: var(--medal-anime-4);
+}
+.medal-fc-1 {
+    background-image: var(--fc-1);
+}
+.medal-fc-2 {
+    background-image: var(--fc-2);
+}
+.medal-fc-3 {
+    background-image: var(--fc-3);
+}
+.medal-fc-4 {
+    background-image: var(--fc-4);
+}
+.medal-fc-5 {
+    background-image: var(--fc-5);
+}
+.medal-fc-6 {
+    background-image: var(--fc-6);
+}
+.medal-fc-7 {
+    background-image: var(--fc-7);
+}
+.combo-1 {
+    background-image: var(--combo-1);
+}
+.combo-2 {
+    background-image: var(--combo-2);
+}
+.combo-3 {
+    background-image: var(--combo-3);
+}
+.combo-4 {
+    background-image: var(--combo-4);
+}
+.play-1 {
+    background-image: var(--play-1);
+}
+.play-2 {
+    background-image: var(--play-2);
+}
+.play-3 {
+    background-image: var(--play-3);
+}
+.play-4 {
+    background-image: var(--play-4);
+}
+.medalha-1 {
+    background-image: var(--medalha-1);
+}
+.medalha-2 {
+    background-image: var(--medalha-2);
+}
+.medalha-3 {
+    background-image: var(--medalha-3);
+}
+.medalha-4 {
+    background-image: var(--medalha-4);
+}
+.medalha-5 {
+    background-image: var(--medalha-5);
+}
+.medalha-6 {
+    background-image: var(--medalha-6);
+}
+.medalha-7 {
+    background-image: var(--medalha-7);
+}
+
+.last .medal-10, .last .medalha-1, .last .medalha-2, .last .medalha-3, .last .medalha-4, .last .medalha-5, .last .medalha-6, .last .medalha-7 {
+    width: 83px;
+    height: 89px;
+}
+
+.total-kudosu{
+    font-size: 12px;
+}
+
+.number-kudosu{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.info-kudosu{
+    font-size: 14px;
+}
+
+.gain-kudosu{
+    display: flex;
+    font-size: 14px;
+}
+
+.gain-kudosu a{
+    color: var(--rosa);
+    text-decoration: none;
+}
+
+.last-kudosu{
+    margin-right: auto;
+}
+
+.time-kudosu{
+    color: var(--cinza);
+}

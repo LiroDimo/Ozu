@@ -1,0 +1,1407 @@
+body{
+    background-color: var(--color-1);
+    color: var(--branco);
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
+
+.container{
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    
+        .container {
+        width: 1000px;
+        overflow-x: hidden;
+    }
+    
+    .topbar{
+        background-color: var(--rosa-2);
+
+    .profile-banner{
+        min-width: width:100%; !important;
+    }
+
+    .play-pp::before{
+        left: 5%;
+    }
+
+    .foot{
+       
+        background-color: transparent !important;
+    }
+
+    .topbar-background{
+        display: none !important;
+    }
+}
+
+/* Background da topbar */
+
+.topbar-background{
+    display: inline;
+    z-index: -1;
+}
+
+.back-um{
+    background-image: var(--triangles);
+    background-repeat: no-repeat;
+    background-position: top;
+    filter: hue-rotate(324deg);
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.back-dois{
+    background-image: radial-gradient( circle at top center, var(--cinza) 0%, var(--prata) 70%);
+    background-repeat: no-repeat;
+    background-position: top;
+    filter: opacity(0.3);
+    position: absolute;
+    height: 160px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* Topbar */
+
+.topbar{
+    display: flex;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+.topbar-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+.topbar-logo{
+    margin-right: 10px;
+}
+
+.osu-logo-bordas{
+    background-image: var(--osu-logo-bordas);
+}
+
+/* Faz aparecer o fundo */
+
+.osu-logo-full:has(.osu-logo-bordas):hover{
+    background-image: var(--osu-logo-full);
+
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+/* Items do lado esquerdo */
+
+.topbar-menu{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.topbar-menu a{
+    color: var(--branco);
+    text-decoration: none;
+    position: relative;
+    z-index: 3;
+}
+
+.topbar-search .fas{
+    vertical-align: middle;
+    font-size: 14px;
+    position: relative;
+    margin-left: 10px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.topbar-left:has(.topbar-search:hover) .topbar-menu a{
+    color: var(--rosa);
+}
+
+/* Sub items do lado esquerdo */
+
+.topbar-sub-menu{
+    position: absolute;
+    padding-top: 35px;
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.1s linear;
+}
+
+.topbar-menu:hover .topbar-sub-menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Destativa os eventos ao passa pelo sub-menu */
+
+body:has(.topbar-menu:hover) .head{
+    pointer-events: none;
+}
+
+.sub-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Items do lado direito */
+
+.topbar-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.topbar-notfication{
+    display: flex;
+    border: 2px solid var(--branco);
+    border-radius: 20px;
+    padding: 10px 15px;
+    gap:20px;
+}
+
+.topbar-menu-icon{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.topbar-menu-lang .fi{
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.topbar-profile{
+    display: flex;
+    position: relative;
+}
+
+/* Aparecer as coisas ao clicar */
+
+.lang-checkbox, .profile-checkbox{
+    display: none;
+}
+
+.lang-sub-menu, .profile-sub{
+    position: absolute;
+    visibility: hidden;
+
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-sub{
+    top: 250px;   
+}
+
+.lang-checkbox:checked ~ .lang-sub-menu, .profile-checkbox:checked ~ .profile-sub{
+    visibility: visible;
+}
+
+/* Menu de idiomas */
+
+.lang-sub-menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px 45px;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.lang-sub-menu .sub-item{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.sub-item div, .sub-item span{
+    position: relative;
+    z-index: 3;
+}
+
+.lang-sub-menu{
+    background-color: var(--color-1);
+    border-radius: 10px;
+    padding: 15px 25px;    
+}
+
+/* Menu de perfil */
+
+.profile-sub{
+    display: grid;
+    font-size: 14px;
+    grid-template-rows: 117px 45px 170px;
+    width: 150px;
+    z-index: 2;
+}
+
+.profile-sub-top{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.profile-sub-mid{
+    display: flex;
+    background-color: var(--color-2);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-sub-mid .fa-check-square{
+    display: none;
+}
+.profile-sub-mid .sub-item:active .fa-check-square{
+    display: block;
+}
+.profile-sub-mid .sub-item:active .fa-square{
+    display: none;
+}
+
+.profile-sub-mid .far{
+    margin-right: 10px;
+}
+
+.profile-sub-mid .sub-item{
+    margin-bottom: 0px;
+}
+
+.profile-sub-bot .sub-item{
+    margin-bottom: 8px;
+}
+
+.profile-sub-bot{
+    display: flex;
+    background-color: var(--color-1);
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 25%;
+}
+
+.profile-sub-bot a{
+    color: var(--branco);
+    text-decoration: none;
+    z-index: 3;
+}
+
+/* Main */
+
+.main{
+    margin-top: 25px;
+}
+
+/* Parte de cima (Info) */
+
+.head-title{
+    display: flex;
+    background-color: var(--color-3);
+    color: var(--branco);
+    font-size: 20px;
+    align-items: center;
+    padding-inline: 50px;
+    gap: 15px;
+}
+
+.head-top{
+    display: flex;
+    background-color: var(--color-4);
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.head-top-left{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    margin-right: auto;
+    gap: 15px;
+}
+
+.head-top-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.head-top-item{
+    color: var(--rosa);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.head-top-item.active{
+    color: var(--branco);
+}
+
+.head-top-item .fa-star{
+    font-size: 12px;
+    color: var(--branco);
+}
+
+.head-banner{
+    display: flex;
+    flex-direction: column;
+}
+
+.head-banner .profile-banner{
+    display: flex;    
+    filter: none;
+    justify-content: flex-end;
+    align-items: end;
+    border-radius: 0px;
+    position: relative;
+    padding: 10px 15px;
+    height: 250px;
+    z-index: 1;
+}
+
+.head-banner .profile{
+    border-radius: 40px;
+    width: 120px;
+    height: 120px;
+    margin: -50px 25px 10px 0px;
+    z-index: 2;   
+}
+
+.head-banner .player{
+    display: flex;
+    background-color: var(--color-5);
+    padding: 0px 15px 0px 50px;
+}
+
+.player .nick{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.country{
+    display: flex;
+    color: var(--branco);
+    font-size: 14px;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;    
+}
+
+.country .fi{
+    font-size: 23px;
+    border-radius: 6px;
+}
+
+.past{
+    position: relative;
+    margin: 10px 0px 0px 20px;
+    height: 16px;
+    width: 18px;
+}
+
+.past .fas{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.past-nick{
+    display: flex;
+    background-color: var(--color-8);
+    color: var(--branco);
+    font-size: 10px;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    border-radius: 10px;
+    padding-left: 60px;
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    z-index: 1;
+
+    top: -17px;
+    left: -11px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.past-nick h1{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.past:hover .past-nick{
+    transform: translateY(-10px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.past:hover .fas{
+    transform: translateY(-10px);
+}
+
+.head-profile{
+    display: grid;
+    background-color: var(--color-2);
+    grid-template-columns: 1fr auto 1fr;
+    padding: 10px 50px;
+}
+
+.ranking{
+    display: flex;
+    font-size: 12px;
+    gap: 20px;
+}
+
+.ranking h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* Degrade no Rank */
+
+.global-ranking h1{
+    background: linear-gradient(to bottom, var(--linear-rank));
+    background-clip: text;
+    filter: none;
+    font-weight: 700;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Ranking Grafico */
+
+.rank-svg{
+    fill: none;
+    stroke: var(--amarelo);
+    stroke-width: 2px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+}
+
+.play-details{
+    display: flex;
+    align-items: center;
+}
+
+.player-details{
+    display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: flex-start;
+    margin-right: auto;
+    gap: 55px;
+}
+
+.player-details .valuer{
+    color: var(--branco-escuro);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.map-rank{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.map-rank-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+.head-profile .linha{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    height: 100%;
+    width: 5px;
+}
+
+.head-profile .details{
+    display: grid;
+    background-color: var(--color-6);
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 12px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    gap: 0px 20px;
+}
+
+.head-bot{
+    display: flex;
+    background-color: var(--color-5);
+    padding: 5px 50px;
+}
+
+.head-bot-left{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.head-bot-left .friends, .head-bot-left .mapping-not{
+    display: flex;
+    background-color: var(--color-1);
+    align-items: center;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 10px 25px;
+    gap: 10px;
+}
+
+.head-bot-rigth{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.level{
+    margin-top: 5px;
+}
+
+.level-bar{
+    background-color: var(--color-1);
+    border-radius: 10px;
+    position: relative;
+    width: 200px;
+    height: 6px;    
+}
+
+.level-number{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next-level{
+    color: var(--branco);
+    font-size: 20px;
+    position: absolute;
+
+    top: 50%;
+    left: 240px;
+    transform: translate(-50%, -50%);
+}
+
+.head-foot{
+    display: flex;
+    background-color: var(--color-6);
+    font-size: 12px;
+    position: relative;
+    padding: 10px 15px 10px 50px;
+    z-index: 1;
+}
+
+.head-foot a{
+    color: var(--rosa);
+    text-decoration: none;
+}
+
+.head-foot .fa-fw{
+    color: var(--rosa);
+    font-size: 12px;
+}
+
+.head-foot-left{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.head-foot-rigth{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.player-info{
+    display: flex;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+.player-info a{
+    font-weight: 700;
+}
+
+.location{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.loc, .interest, .job{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+.links{
+    display: flex;
+    gap: 10px;
+}
+
+.main-body{
+    background-color: var(--color-2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.top-nav{
+    display: flex;
+    color: var(--rosa);
+    font-size: 14px;
+    margin-left: 40px;
+    gap: 20px;
+}
+
+.top-nav .active{
+    color: var(--branco);
+}
+
+/* Config do card */
+
+.main-card{
+    background-color: var(--color-6);
+    position: relative;
+    border-radius: 10px;
+    padding: 20px 15px 20px 40px;
+    margin-block: 10px;
+    min-height: 230px;
+
+    z-index: 1;
+}
+
+.main-top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    
+}
+
+.main-top .title{
+    margin-bottom: 20px;
+    margin-right: auto;
+    position: relative;
+}
+
+.move{
+    cursor: move;
+}
+
+/* Coisas do Card */
+
+.main-item{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.main-item-title{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.main-item-title .text{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: max-content;
+}
+
+.main-item-title .value{
+    display: flex;
+    background-color: var(--color-1);
+    align-items: center;
+    font-size: 11px;
+    border-radius: 10px;
+    padding: 1px 10px;
+    margin-top: 2px;
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+
+.score-more{
+    cursor: pointer;
+}
+
+/* Card de play */
+
+.play-card{
+    display: flex;
+    background-color: var(--color-5);
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    margin-right: auto;
+    padding: 6px;
+}
+
+/* Primeira parte do card de play */
+
+.play-music{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    min-width: 0;
+    max-width: 500px;
+    margin-right: auto;
+    white-space: nowrap;
+    z-index: 3;
+    gap: 10px;
+}
+
+.music-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.music-info {
+    min-width: 0;
+}
+
+.music-detail{
+    display: flex;
+    font-size: 12px;
+    gap: 5px;
+}
+.music-detail .diff{
+    color: var(--amarelo);
+}
+.music-detail .time{
+    color: var(--cinza);
+}
+
+/* Segunda parte */
+
+.play-mod, .play-result{
+    position: relative;
+    justify-content: flex-end;
+    width: 120px;
+    z-index: 3;
+}
+
+.play-mod{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 2px;
+}
+
+.mod{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;    
+}
+
+.play-info{
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 25px;
+    gap: 30px;
+}
+
+.play-info .acc{
+    color: var(--amarelo);
+}
+
+
+.play-result .peso{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.play-pp{
+    display: flex;
+    color: var(--rosa);
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    position: relative;
+    width: 110px;
+    padding: 0px 20px 0px 40px;
+    z-index: 3;
+    gap: 5px;
+    align-items: center;
+}
+
+.show-more{
+    display: flex;
+    justify-content: center;
+}
+
+.show-more .show{
+    display: flex;
+    background-color: var(--color-7);
+    font-size: 12px;
+    padding: 5px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.show-more .show .fas{
+    font-size: 8px;
+    margin-top: 3px;
+}
+
+/*Beatmap Card*/
+
+.beatmap-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.beatmap-placeholder{
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.beatmap-card{
+    background-color: var(--color-5);
+    border: 3px solid transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    min-height: 100px;
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;       
+}
+
+.beatmap-back{
+    display: flex;
+    background-color: var(--color-5);
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 8px;
+    border-radius: 10px;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    gap: 20px;
+    z-index: 1;
+    
+    top:0;
+    left:0;        
+}
+
+
+.beatmap-front{
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    clip-path: inset(0% 3% 0% 0% round 10px);
+    cursor: pointer;
+    z-index: 2;
+
+    transition: clip-path 0.3s ease-in-out;
+}
+
+.beatmaps-card .fav .beatmap-placeholder:nth-child(1) .beatmap-front{
+    background-image: var(--beatmap-you);
+}
+.beatmaps-card .fav .beatmap-placeholder:nth-child(2) .beatmap-front{
+    background-image: var(--beatmap-conect);
+}
+.beatmaps-card .fav .beatmap-placeholder:nth-child(3) .beatmap-front{
+    background-image: var(--beatmap-flag);
+}
+.beatmaps-card .fav .beatmap-placeholder:nth-child(4) .beatmap-front{
+    background-image: var(--beatmap-aozora);
+}
+.beatmaps-card .fav .beatmap-placeholder:nth-child(5) .beatmap-front{
+    background-image: var(--beatmap-waterblue);
+}
+.beatmaps-card .fav .beatmap-placeholder:nth-child(6) .beatmap-front{
+    background-image: var(--beatmap-songs);
+}
+
+.beatmaps-card .gav .beatmap-placeholder:nth-child(1) .beatmap-front{
+    background-image: var(--betmap-colors);
+}
+.beatmaps-card .gav .beatmap-placeholder:nth-child(2) .beatmap-front{
+    background-image: var(--betmap-verao);
+}
+
+.beatmap-back .fas{
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    
+    transition: visibility 0s ease-in-out;
+}
+
+.beatmap-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: left;
+    background-size: cover;
+    border-radius: 10px;
+    margin-right: -10px;
+    height: 100%;
+    width: 30%;
+    z-index: 1;
+}
+
+.beatmaps-card .fav .beatmap-placeholder:nth-child(1) .beatmap-icon{
+    background-image: var(--beatmap-you-2);
+}
+.beatmaps-card .fav .beatmap-placeholder:nth-child(2) .beatmap-icon{
+    background-image: var(--beatmap-conect-2);
+    background-position: center;
+}
+.beatmaps-card .fav .beatmap-placeholder:nth-child(3) .beatmap-icon{
+    background-image: var(--beatmap-flag-2);
+}
+.beatmaps-card .fav .beatmap-placeholder:nth-child(4) .beatmap-icon{
+    background-image: var(--beatmap-aozora-2);
+}
+.beatmaps-card .fav .beatmap-placeholder:nth-child(5) .beatmap-icon{
+    background-image: var(--beatmap-waterblue-2);
+}
+.beatmaps-card .fav .beatmap-placeholder:nth-child(6) .beatmap-icon{
+    background-image: var(--beatmap-songs-2);
+    background-position: right;
+}
+.beatmaps-card .gav .beatmap-placeholder:nth-child(1) .beatmap-icon{
+    background-image: var(--betmap-colors-2);
+}
+.beatmaps-card .gav .beatmap-placeholder:nth-child(2) .beatmap-icon{
+    background-image: var(--betmap-verao-2);
+}
+
+.icon-display{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.458);
+    opacity: 1;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.beatmap-icon .fas{
+    font-size: 20px;
+    filter: brightness(1);
+    z-index: 3;
+    visibility: hidden;
+}
+
+
+.beatmap-infos{
+    display: flex;
+    background: linear-gradient(to right, #46393f 10%, #46393f56 100%);
+    font-weight: 700;
+    flex-direction: column;
+    padding: 2px 0px 0px 10px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+    gap: 2px;
+    z-index: 3;
+}
+
+
+.beatmap-title{
+    font-size: 18px;
+}
+
+.beatmap-artist{
+    font-size: 14px;
+}
+.beatmap-mapper{
+    font-size: 12px;
+}
+
+.beatmap-mapper a{
+    color: var(--rosa);
+    text-decoration: none;
+}
+
+.beatmap-status{
+    display: flex;
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.beatmap-status-item{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    gap: 2px;
+}
+
+.beatmap-status-item .fas{
+    font-size: 8px;
+    margin-top: 1px;
+}
+
+.beatmap-class{
+    display: flex;
+    align-items: center;
+    color: var(--color-5);
+    font-size: 12px;
+    gap: 2px;
+    margin-bottom: 2px;
+}
+
+.classfi{
+    background-color: var(--verde);
+    border-radius: 20px;
+    padding: 2px 5px;
+    margin-right: 5px;
+}
+
+.gav .classfi{
+    background-color: var(--color-8);
+    color: var(--color-7);
+}
+
+
+.diff-count{
+    display: flex;
+    align-items: center;
+}
+
+.beatmap-card:hover .beatmap-status{
+    visibility: visible;
+    opacity: 1;
+}
+
+.beatmap-card:hover .beatmap-front{
+    clip-path: inset(0% 6% 0% 0% round 10px);
+}
+
+.beatmap-card:hover .beatmap-back .fas{
+    visibility: visible;
+    opacity: 1;
+}
+
+.beatmap-card:hover .beatmap-icon .fas, .beatmap-card:hover .icon-display{
+    visibility: visible;
+}
+
+.beatmap-card:has(.beatmap-class:hover) .beatmap-down{
+    display: block;
+}
+
+.beatmap-card:has(.beatmap-class:hover){
+    border: 3px solid var(--rosa);
+}
+
+.beatmap-down {
+    display: none;
+    padding: 10px 0px 5px 5px;
+    background-color: var(--color-7);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.beatmap-down-diff{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stars{
+    display: flex;
+    color: var(--diff-2-text);
+    font-size: 12px;
+    align-items: center;
+    gap: 2px;
+    background-color: var(--diff-7);
+    padding: 2px 8px;
+    margin-top: 1px;
+    border-radius: 20px;
+}
+
+.stars .fas{
+    font-size: 8px;
+    margin-top: -1px;
+}
+
+.stars div{
+    margin-top: -2px;
+}
+
+.diff-title{
+    font-size: 12px;
+    margin-top: -2px;
+    cursor: pointer;
+}
+
+.beatmap-list{
+    margin-bottom: 15px;
+}
+
+.history-graphic{
+    padding: 20px 20px 40px 40px;
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.graphic-Y {
+    display: flex;
+    color: var(--cinza);
+    font-family: sans-serif;
+    font-size: 12px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+
+    left: 0px;
+    top: 25px;
+}
+
+.graphic-X {
+    display: flex;
+    color: var(--cinza);
+    font-family: sans-serif;
+    font-size: 12px;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0px;
+    left: 30px;
+    right: 90px;
+}
+
+.history-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.play-history {
+    fill: none;
+    stroke: var(--amarelo);
+    stroke-width: 2px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+}
+
+.grade-fundo line {
+    stroke: var(--color-1);
+    stroke-width: 1px;
+    vector-effect: non-scaling-stroke;
+}
+
+/* Ediçoes especificas */
+
+/* Icon do me! */
+.me-card .fa-angle-right{
+    font-size: 12px;
+}
+
+/* Para quando não for top play */
+.no-pp .play-info{
+    justify-content: center;
+    width: 70px;
+}
+.no-pp .play-result{
+    justify-content: center;
+    width: 70px;
+}
+.no-pp .play-mod{
+    margin-right: 10px;
+}
+
+.medal-card{
+    padding-inline: 50px;
+}
+
+.medal-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.last{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.most-beatmap{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    margin-bottom: 5px;
+}
+
+.most-beatmap-icon{
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 70px;
+    height: 60px;
+}
+
+.most-beatmap:nth-child(1) .most-beatmap-icon{
+    background-image: var(--beatmap-coracao);
+}
+.most-beatmap:nth-child(2) .most-beatmap-icon{
+    background-image: var(--beatmap-kani);
+}
+.most-beatmap:nth-child(3) .most-beatmap-icon{
+    background-image: var(--beatmap-zen);
+}
+.most-beatmap:nth-child(4) .most-beatmap-icon{
+    background-image: var(--beatmap-trevo);
+}
+.most-beatmap:nth-child(5) .most-beatmap-icon{
+    background-image: var(--beatmap-wonder);
+}
+
+.most-beatmap-items{
+    display: flex;
+    background-color: var(--color-5);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-inline: 15px;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.most-beatmap-play{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.most-beatmap-text{
+    margin-right: auto;
+}
+.most-beatmap-title{
+    font-size: 16px;
+    color: var(--branco);
+}
+.most-beatmap-mapper{
+    font-size: 12px;
+    color: var(--cinza);
+}
+.most-beatmap-play{
+    font-size: 20px;
+    color: var(--amarelo);
+}
+.most-beatmap-play .fas{
+    font-size: 12px;
+    color: var(--amarelo);
+}
+.beatmap-list{
+    margin-right: 25px;
+}
+
+.replay .graphic-Y {
+    gap: 44px;
+}
+
+.replay .graphic-X {
+    bottom: 20px;
+    left: 41px;
+    right: 20px;
+}
+
+.music-rank{
+    margin-left: 15px;
+}
+
+.foot{
+    display: flex;
+    background-color: var(--color-2);
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    min-width: 1000px;
+}
+
+.foot-top{
+    display: flex;
+    gap: 10px;
+}
+
+.foot-top a{
+    color: var(--branco);
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.foot-bot{
+    color: var(--cinza);
+    font-size: 10px;
+}

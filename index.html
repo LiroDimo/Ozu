@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Yoshiko-kun · player info| osu!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yoshiko-kun">
+    <link rel="stylesheet" href="elements.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="config.css">
+    <link rel="stylesheet" href="medals.css">
+    <link rel="stylesheet" href="osu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="topbar">
+            <div class="topbar-background">
+                <div class="back-um"></div>
+                <div class="back-dois"></div>
+            </div>
+            <div class="topbar-left">
+                <div class="topbar-logo">
+                    <a href="#">
+                        <div class="osu-logo-full">
+                            <div class="osu-logo-bordas"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topbar-menu">
+                    <a href="#">home</a>
+                    <div class="topbar-sub-menu">
+                        <div class="sub-item">
+                            <a href="#">news</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">team</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">changelog</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">download</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">search</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-menu">
+                    <a href="#">beatmaps</a>
+                    <div class="topbar-sub-menu">
+                        <div class="sub-item">
+                            <a href="#">beatmap listing</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">featured artists</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">beatmap packs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-menu">
+                    <a href="#">rankings</a>
+                    <div class="topbar-sub-menu">
+                        <div class="sub-item">
+                            <a href="#">global</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">country</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">top plays</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">team</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">playlists</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">ranked play</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">daily challenge</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">kudosu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-menu">
+                    <a href="#">community</a>
+                    <div class="topbar-sub-menu">
+                        <div class="sub-item">
+                            <a href="#">forum</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">chat</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">contests</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">tournaments</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">live streams</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">development</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-menu">
+                    <a href="#">store</a>
+                    <div class="topbar-sub-menu">
+                        <div class="sub-item">
+                            <a href="#">products</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">cart</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">order history</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-menu">
+                    <a href="#">help</a>
+                    <div class="topbar-sub-menu">
+                        <div class="sub-item">
+                            <a href="#">wiki</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">faq</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">rules</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">report abuse</a>
+                        </div>
+                        <div class="sub-item">
+                            <a href="#">no, really i need help!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-search">
+                    <span class="fas fa-search"></span>
+                </div>
+            </div>
+            <div class="topbar-right">
+                <div class="topbar-menu-icon">
+                    <span class="fab fa-twitter"></span>
+                </div>
+                <div class="topbar-menu-icon">
+                    <span class="fas fa-heart"></span>
+                </div>
+                <div class="topbar-menu-icon">
+                    <div class="topbar-menu-lang">
+                        <input type="checkbox" class="lang-checkbox" id="lang-checkbox">
+                        <label class="fi fi-gb" for="lang-checkbox"></label>
+                        <div class="lang-sub-menu">
+                            <div class="sub-item">
+                                <span class="fi fi-gb active"></span>
+                                <div>Inglês</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-sa"></span>
+                                <div>Árabe</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-by"></span>
+                                <div>Bielorrusso</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-bg"></span>
+                                <div>Búlgaro</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-ad"></span>
+                                <div>Catalão</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-cz"></span>
+                                <div>Tcheco</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-dk"></span>
+                                <div>Dinamarquês</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-de"></span>
+                                <div>Alemão</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-gr"></span>
+                                <div>Grego</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-es"></span>
+                                <div>Espanhol</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-fi"></span>
+                                <div>Finlandês</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-ph"></span>
+                                <div>Filipino</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-fr"></span>
+                                <div>Francês</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-il"></span>
+                                <div>Hebraico</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-hu"></span>
+                                <div>Húngaro</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-id"></span>
+                                <div>Indonésio</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-it"></span>
+                                <div>Italiano</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-jp"></span>
+                                <div>Japonês</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-kr"></span>
+                                <div>Coreano</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-lt"></span>
+                                <div>Lituano</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-nl"></span>
+                                <div>Holandês</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-no"></span>
+                                <div>Norueguês</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-pl"></span>
+                                <div>Polonês</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-pt"></span>
+                                <div>Português</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-br"></span>
+                                <div>Português Brasileiro</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-ro"></span>
+                                <div>Romeno</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-ru"></span>
+                                <div>Russo</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-rs"></span>
+                                <div>Sérvio</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-si"></span>
+                                <div>Esloveno</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-hr"></span>
+                                <div>Croata</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-se"></span>
+                                <div>Sueco</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-th"></span>
+                                <div>Tailandês</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-tr"></span>
+                                <div>Turco</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-ua"></span>
+                                <div>Ucraniano</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-hk"></span>
+                                <div>Cantonês</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-cn"></span>
+                                <div>Chinês Simplificado</div>
+                            </div>
+                            <div class="sub-item">
+                                <span class="fi fi-tw"></span>
+                                <div>Chinês Tradicional</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-notfication">
+                    <div class="topbar-menu-icon">
+                        <span class="fas fa-comment-alt"></span>
+                        <div class="notfication-n">0</div>
+                    </div>
+                    <div class="topbar-menu-icon">
+                        <span class="fas fa-bell"></span>
+                        <div class="notfication-n">0</div>
+                    </div>
+                </div>
+                <div class="topbar-profile">
+                    <input type="checkbox" class="profile-checkbox" id="profile-checkbox">
+                    <label class="profile" for="profile-checkbox"></label>
+                    <div class="profile-sub">
+                        <div class="profile-sub-top">
+                            <div class="profile-banner"></div>
+                            <div class="player-icon"></div>
+                            <div class="player-nick">Yoshiko-kun</div>
+                        </div>
+                        <div class="profile-sub-mid">
+                            <div class="sub-item">
+                                <div class="square">
+                                    <span class="far fa-square"></span>
+                                    <span class="far fa-check-square"></span>
+                                </div>
+                                <div>Lazer mode</div>
+                            </div>
+                        </div>
+                        <div class="profile-sub-bot">
+                            <div class="sub-item">
+                                <a href="#">My Profile</a>
+                            </div>
+                            <div class="sub-item">
+                                <a href="#">Creat Team</a>
+                            </div>
+                            <div class="sub-item">
+                                <a href="#">Friends</a>
+                            </div>
+                            <div class="sub-item">
+                                <a href="#">Watchlists</a>
+                            </div>
+                            <div class="sub-item">
+                                <a href="#">Settings</a>
+                            </div>
+                            <div class="sub-item">
+                                <a href="#">Sing Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="main">
+            <header class="head">
+                <div class="head-title">
+                    <div class="player-icon"></div>
+                    <div>player info</div>
+                </div>
+                <div class="head-top">
+                    <div class="head-top-left">
+                        <div class="head-top-item active">info</div>
+                        <div class="head-top-item">modding</div>
+                        <div class="head-top-item">playlist</div>
+                        <div class="head-top-item">multiplayer</div>
+                        <div class="head-top-item">ranked play</div>
+                    </div>
+                    <div class="head-top-right">
+                        <div class="head-top-item">
+                            <div class="mode-std active"></div>
+                            <span class="fas fa-star"></span>
+                        </div>
+                        <div class="head-top-item">
+                            <div class="mode-taiko"></div>
+                        </div>
+                        <div class="head-top-item">
+                            <div class="mode-catch"></div>
+                        </div>
+                        <div class="head-top-item">
+                            <div class="mode-mania"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-banner">
+                    <div class="profile-banner">
+                        <div class="editar">
+                            <span class="fas fa-pen"></span>
+                        </div>
+                    </div>
+                    <div class="player">
+                        <div class="profile"></div>
+                        <div class="User">
+                            <div class="nick">Yoshiko-kun</div>
+                            <div class="country">
+                                <span class="fi fi-br"></span>
+                                <div>Brazil</div>
+                            </div>
+                        </div>
+                        <div class="past">
+                            <span class="fas fa-address-card"></span>
+                            <div class="past-nick">
+                                <div>formerly known as</div>
+                                <div>
+                                    <h1>Jrwt</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more">
+                            <span class="fas fa-angle-up"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-profile">
+                    <div class="status">
+                        <div class="ranking">
+                            <div class="global-ranking">
+                                <div>Global Ranking</div>
+                                <div><h1>#58,376</h1></div>
+                            </div>
+                            <div class="country-ranking">
+                                <div>Country Ranking</div>
+                                <div><h1>#1,845</h1></div>
+                            </div>
+                        </div>
+                        <div class="rank-history">
+                            <div class="grafico-rank">
+                                <svg width="581.9833374023438" height="90"><g class="rank-svg" transform="translate(0, 15)">
+                                    <path class="line-chart__line" d="
+                                    M0,0C2.18,0.17,4.359,0.341,6.539,0.553C8.719,0.765,10.899,1.013,13.078,1.274C15.258,1.534,17.438,1.842,19.617,2.114C21.797,2.386,23.977,2.71,26.157,2.906C28.336,3.102,30.516,3.126,32.696,3.29C34.875,3.454,37.055,3.674,39.235,3.889C41.415,4.105,43.594,4.353,45.774,4.584C47.954,4.816,50.133,5.044,52.313,5.279C54.493,5.515,56.673,5.75,58.852,5.997C61.032,6.245,63.212,6.5,65.391,6.763C67.571,7.026,69.751,7.317,71.931,7.576C74.11,7.835,76.29,8.082,78.47,8.317C80.649,8.552,82.829,8.712,85.009,8.986C87.189,9.261,89.368,9.71,91.548,9.965C93.728,10.22,95.907,10.291,98.087,10.514C100.267,10.737,102.447,11.055,104.626,11.301C106.806,11.547,108.986,11.762,111.165,11.992C113.345,12.222,115.525,12.429,117.704,12.683C119.884,12.937,122.064,13.259,124.244,13.516C126.423,13.774,128.603,13.949,130.783,14.23C132.962,14.512,135.142,14.936,137.322,15.205C139.502,15.475,141.681,15.59,143.861,15.847C146.041,16.104,148.22,16.485,150.4,16.75C152.58,17.015,154.76,17.205,156.939,17.438C159.119,17.672,161.299,17.901,163.478,18.15C165.658,18.399,167.838,18.743,170.018,18.933C172.197,19.122,174.377,19.087,176.557,19.288C178.736,19.49,180.916,19.896,183.096,20.141C185.276,20.386,187.455,20.496,189.635,20.757C191.815,21.017,193.994,21.356,196.174,21.703C198.354,22.05,200.534,22.492,202.713,22.839C204.893,23.185,207.073,23.508,209.252,23.784C211.432,24.059,213.612,24.264,215.792,24.492C217.971,24.72,220.151,24.925,222.331,25.153C224.51,25.381,226.69,25.625,228.87,25.861C231.05,26.097,233.229,26.274,235.409,26.568C237.589,26.863,239.768,27.373,241.948,27.629C244.128,27.884,246.308,27.903,248.487,28.1C250.667,28.296,252.847,28.578,255.026,28.806C257.206,29.033,259.386,29.218,261.566,29.465C263.745,29.712,265.925,30.002,268.105,30.288C270.284,30.574,272.464,30.95,274.644,31.181C276.824,31.412,279.003,31.443,281.183,31.674C283.363,31.905,285.542,32.331,287.722,32.566C289.902,32.801,292.082,32.832,294.261,33.082C296.441,33.332,298.621,33.782,300.8,34.067C302.98,34.352,305.16,34.544,307.34,34.794C309.519,35.044,311.699,35.262,313.879,35.567C316.058,35.871,318.238,36.288,320.418,36.62C322.598,36.951,324.777,37.259,326.957,37.555C329.137,37.852,331.316,38.132,333.496,38.397C335.676,38.662,337.855,38.907,340.035,39.144C342.215,39.382,344.395,39.573,346.574,39.821C348.754,40.07,350.934,40.358,353.113,40.638C355.293,40.918,357.473,41.14,359.653,41.501C361.832,41.862,364.012,42.488,366.192,42.806C368.371,43.124,370.551,43.132,372.731,43.411C374.911,43.691,377.09,44.133,379.27,44.482C381.45,44.831,383.629,45.21,385.809,45.505C387.989,45.799,390.169,45.993,392.348,46.248C394.528,46.504,396.708,46.763,398.887,47.038C401.067,47.313,403.247,47.614,405.427,47.897C407.606,48.179,409.786,48.396,411.966,48.732C414.145,49.068,416.325,49.613,418.505,49.914C420.685,50.215,422.864,50.238,425.044,50.539C427.224,50.84,429.403,51.384,431.583,51.72C433.763,52.055,435.943,52.259,438.122,52.552C440.302,52.845,442.482,53.15,444.661,53.477C446.841,53.804,449.021,54.231,451.201,54.516C453.38,54.801,455.56,54.928,457.74,55.186C459.919,55.443,462.099,55.786,464.279,56.062C466.459,56.339,468.638,56.593,470.818,56.846C472.998,57.1,475.177,57.238,477.357,57.583C479.537,57.929,481.717,58.516,483.896,58.919C486.076,59.322,488.256,60,490.435,60C492.615,60,494.795,43.947,496.975,43.947C499.154,43.947,501.334,44.858,503.514,45.389C505.693,45.919,507.873,46.57,510.053,47.131C512.233,47.692,514.412,48.26,516.592,48.755C518.772,49.25,520.951,49.717,523.131,50.099C525.311,50.481,527.491,50.671,529.67,51.049C531.85,51.427,534.03,52.013,536.209,52.367C538.389,52.722,540.569,52.872,542.749,53.176C544.928,53.481,547.108,53.885,549.288,54.193C551.467,54.501,553.647,54.724,555.827,55.024C558.006,55.324,560.186,55.689,562.366,55.993C564.546,56.297,566.725,56.546,568.905,56.846C571.085,57.146,573.264,57.791,575.444,57.791C577.624,57.791,579.804,57.791,581.983,57.791"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="play-details">
+                            <div class="player-details">
+                                <div class="medals-details">
+                                    <div class="title">Medals</div>
+                                    <div class="valuer">128</div>
+                                </div>
+                                <div class="pp-details">
+                                    <div class="title">pp</div>
+                                    <div class="valuer">6,107</div>
+                                </div>
+                                <div class="time-details">
+                                    <div class="title">Total Play Time</div>
+                                    <div class="valuer">63d 0h 16m</div>
+                                </div>
+                            </div>
+                            <div class="map-rank">
+                                <div class="map-rank-card">
+                                    <div class="SX"></div>
+                                    <div class="map-rank-n">17</div>
+                                </div>
+                                <div class="map-rank-card">
+                                    <div class="SS"></div>
+                                    <div class="map-rank-n">128</div>
+                                </div>
+                                <div class="map-rank-card">
+                                    <div class="X"></div>
+                                    <div class="map-rank-n">319</div>
+                                </div>
+                                <div class="map-rank-card">
+                                    <div class="S"></div>
+                                    <div class="map-rank-n">1,317</div>
+                                </div>
+                                <div class="map-rank-card">
+                                    <div class="A"></div>
+                                    <div class="map-rank-n">689</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="details">
+                        <div>Ranked Score</div>
+                        <div>15,749,545,051</div>
+                        <div>Hit Accuracy</div>
+                        <div>97.93%</div>
+                        <div>Play Count</div>
+                        <div>91,280</div>
+                        <div>Total Score</div>
+                        <div>118,634,396,550</div>
+                        <div>Total Hits</div>
+                        <div>20,136,487</div>
+                        <div>Hits Per Play</div>
+                        <div>220</div>
+                        <div>Maximum Combo</div>
+                        <div>3,048</div>
+                        <div>Replays Watched by Others</div>
+                        <div>8</div>
+                    </div>
+                </div>
+                <div class="head-bot">
+                    <div class="head-bot-left">
+                        <div class="friends">
+                            <span class="fas fa-user"></span>
+                            <div>17</div>
+                        </div>
+                        <div class="mapping-not">
+                            <span class="fas fa-bell"></span>
+                            <div>0</div>
+                        </div>
+                    </div>
+                    <div class="head-bot-rigth">
+                        <div class="level">
+                            <div class="level-bar"></div>
+                            <div class="level-number">91%</div>
+                        </div>
+                        <div class="level-icon">
+                        </div>
+                        <div class="next-level">100</div>
+                    </div>
+                </div>
+                <div class="head-foot">
+                    <div class="head-foot-left">
+                        <div class="player-info">
+                            <div>Joined <b>December 2018</b></div>
+                            <div>Currently online</div>
+                            <div>Plays with <b>Keyboard, Tablet</b></div>
+                            <div>Contributed <a href="#">19 forum posts</a></div>
+                            <div>Posted <a href="#">6 comments</a></div>
+                        </div>
+                        <div class="location">
+                            <div class="loc">
+                                <span class="fa-fw fas fa-map-marker-alt"></span>
+                                <div>Milky Way</div>
+                            </div>
+                            <div class="interest">
+                                <span class="fa-fw far fa-heart"></span>
+                                <div>Love Live</div>
+                            </div>
+                            <div class="job">
+                                <span class="fa-fw fas fa-suitcase"></span>
+                                <div>⊂(•‿•⊂ )</div>
+                            </div>
+                        </div>
+                        <div class="links">
+                            <div class="discord">
+                                <span class="fa-fw fab fa-discord"></span>
+                                <a href="#">Lirodimo</a>
+                            </div>
+                            <div class="link">
+                                <span class="fa-fw fas fa-link"></span>
+                                <a href="#">Anilist.co/user/LiroDimo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head-foot-rigth">
+                        <div class="editar">
+                            <span class="fas fa-pen"></span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </header>
+            <div class="main-body">
+                <div class="top-nav">
+                    <div class="active">me!</div>
+                    <div>Scores</div>
+                    <div>Medals</div>
+                    <div>Beatmaps</div>
+                    <div>Historical</div>
+                    <div>Recent</div>
+                    <div>Kudosu!</div>
+                </div>
+                <div class="main-card me-card">
+                    <div class="main-top">
+                        <div class="title">me!</div>
+                        <div class="move">
+                            <span class="fas fa-bars"></span>
+                        </div>
+                        <div class="editar">
+                            <span class="fas fa-pen"></span>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div>♡YOSHIKO♡</div>
+                    </div>
+                    <div class="main-item">
+                        <span class="fas fa-angle-right"></span>
+                    </div>
+                    <div class="main-item">
+                        <span class="fas fa-angle-right"></span>
+                    </div> 
+                </div>
+                <div class="main-card score-card">
+                    <div class="main-top">
+                        <div class="title">Scores</div>
+                        <div class="move">
+                            <span class="fas fa-bars"></span>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="main-item-title">
+                            <div class="text">Pinned Scores</div>
+                            <div class="value">10</div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card no-pp">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="A"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">Galaxy Collapse by Kurokotei</div>
+                                    <div class="music-detail">
+                                        <div class="diff">Galaxy</div>
+                                        <div class="time">6 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-roxo"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-classic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">98,33%</div>
+                                </div>
+                            </div>
+                            <div class="play-pp">
+                                <div class="fas fa-heart"></div>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card no-pp">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="S"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">Ascension to Heaven by xi</div>
+                                    <div class="music-detail">
+                                        <div class="diff">Death </div>
+                                        <div class="time">6 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-doubletime"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">95,52%</div>
+                                </div>
+                            </div>
+                            <div class="play-pp">
+                                <span>935pp</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card no-pp">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="X"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">The Unforgiving by Within Temptation</div>
+                                    <div class="music-detail">
+                                        <div class="diff">Marathon </div>
+                                        <div class="time">5 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-flashlight"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">99,31%</div>
+                                </div>
+                            </div>
+                            <div class="play-pp">
+                                <span>795pp</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card no-pp">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="S"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">Yomi yori Kikoyu, Koukoku no Tou to Honoo no Shoujo by Imperial Circus Dead Decadence</div>
+                                    <div class="music-detail">
+                                        <div class="diff">Kyouaku</div>
+                                        <div class="time">4 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-roxo"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-classic"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">99,55%</div>
+                                </div>
+                            </div>
+                            <div class="play-pp">
+                                <span>1000pp</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card no-pp">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="S"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">Valley of the Damned by DragonForce</div>
+                                    <div class="music-detail">
+                                        <div class="diff">Apocalypse</div>
+                                        <div class="time">3 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-doubletime"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">99,31%</div>
+                                </div>
+                            </div>
+                            <div class="play-pp">
+                                <span>1505pp</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="show-more">
+                            <div class="show">
+                                <span class="fas fa-chevron-down"></span>
+                                <div>SHOW MORE</div>
+                                <span class="fas fa-chevron-down"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="main-item-title">
+                            <div class="text">Best Performance</div>
+                            <div class="value">200</div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="SX"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">Team Magma & Aqua Leader Battle Theme (Unofficial) by Bliitzit</div>
+                                    <div class="music-detail">
+                                        <div class="diff">Catastrophe </div>
+                                        <div class="time">5 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-doubletime"></span>
+                                    </div>
+                                </div>
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-hidden"></span>
+                                    </div>
+                                </div>
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-hardrock"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">100%</div>
+                                    <div class="points">1162pp</div>
+                                </div>
+                                <div class="peso">weighted 100%</div>
+                            </div>
+                            <div class="play-pp">
+                                <span>1162pp</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="A"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">Mou ii kai? by THE ORAL CIGARETTES</div>
+                                    <div class="music-detail">
+                                        <div class="diff">Rain  </div>
+                                        <div class="time">6 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-doubletime"></span>
+                                    </div>
+                                </div>
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-hidden"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">98,13%</div>
+                                    <div class="points">1153pp</div>
+                                </div>
+                                <div class="peso">weighted 95%</div>
+                            </div>
+                            <div class="play-pp">
+                                <span>1095pp</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="X"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">Tsukinami by Wakeshima Kanon</div>
+                                    <div class="music-detail">
+                                        <div class="diff">Nostalgia </div>
+                                        <div class="time">7 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-doubletime"></span>
+                                    </div>
+                                </div>
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-hidden"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">99,42%</div>
+                                    <div class="points">1023</div>
+                                </div>
+                                <div class="peso">weighted 90%</div>
+                            </div>
+                            <div class="play-pp">
+                                <span>920pp</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="X"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">FREEDOM DIVE by xi</div>
+                                    <div class="music-detail">
+                                        <div class="diff">FOUR DIMENSIONS </div>
+                                        <div class="time">9 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-hidden"></span>
+                                    </div>
+                                </div>
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-hardrock"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">99,83%</div>
+                                    <div class="points">895pp</div>
+                                </div>
+                                <div class="peso">weighted 86%</div>
+                            </div>
+                            <div class="play-pp">
+                                <span>769pp</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="A"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">Blue Zenith by xi</div>
+                                    <div class="music-detail">
+                                        <div class="diff">FOUR DIMENSIONS </div>
+                                        <div class="time">10 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-hardrock"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">99,71%</div>
+                                    <div class="points">727pp</div>
+                                </div>
+                                <div class="peso">weighted 81%</div>
+                            </div>
+                            <div class="play-pp">
+                                <span>588pp</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="show-more">
+                            <div class="show">
+                                <span class="fas fa-chevron-down"></span>
+                                <div>SHOW MORE</div>
+                                <span class="fas fa-chevron-down"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="main-item-title">
+                            <div class="text">First Place Scores</div>
+                            <div class="value">1</div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card no-pp">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="S"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">osu!favourites by SakiZ</div>
+                                    <div class="music-detail">
+                                        <div class="diff">Marathon</div>
+                                        <div class="time">49 minutes ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-roxo"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-classic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">98,79%</div>
+                                </div>
+                            </div>
+                            <div class="play-pp">
+                                <div>644pp</div>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-card medal-card">
+                    <div class="main-top">
+                        <div class="title">Medals</div>
+                        <div class="move">
+                            <span class="fas fa-bars"></span>
+                        </div>
+                    </div>
+                    <div class="main-item last">
+                        <div class="main-item-title">
+                            <div class="text">Latest</div>
+                        </div>
+                        <div class="medal-list">
+                            <div class="medal-10"></div>
+                            <div class="medalha-1"></div>
+                            <div class="medalha-2"></div>
+                            <div class="medalha-3"></div>
+                            <div class="medalha-4"></div>
+                            <div class="medalha-5"></div>
+                            <div class="medalha-6"></div>
+                            <div class="medalha-7"></div>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="main-item-title">
+                            <div class="text">Beatmap Pack</div>
+                        </div>
+                        <div class="medal-list">
+                            <div class="medal-game-1"></div>
+                            <div class="medal-rythom-1"></div>
+                            <div class="medal-internet-1"></div>
+                            <div class="medal-anime-1"></div>
+                            <div class="medal-game-2"></div>
+                            <div class="medal-rythom-2"></div>
+                            <div class="medal-internet-2"></div>
+                            <div class="medal-anime-2"></div>
+                            <div class="medal-game-3"></div>
+                            <div class="medal-rythom-3"></div>
+                            <div class="medal-internet-3"></div>
+                            <div class="medal-anime-3"></div>
+                            <div class="medal-game-4"></div>
+                            <div class="medal-rythom-4"></div>
+                            <div class="medal-internet-4"></div>
+                            <div class="medal-anime-4"></div>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="main-item-title">
+                            <div class="text">Skill & Dedication</div>
+                        </div>
+                        <div class="medal-list">
+                            <div class="combo-1"></div>
+                            <div class="combo-2"></div>
+                            <div class="combo-3"></div>
+                            <div class="combo-4"></div>
+                        </div>
+                        <div class="medal-list">
+                            <div class="play-1"></div>
+                            <div class="play-2"></div>
+                            <div class="play-3"></div>
+                            <div class="play-4"></div>
+                        </div>
+                        <div class="medal-list">
+                            <div class="medal-1"></div>
+                            <div class="medal-2"></div>
+                            <div class="medal-3"></div>
+                            <div class="medal-4"></div>
+                            <div class="medal-5"></div>
+                            <div class="medal-6"></div>
+                            <div class="medal-7"></div>
+                            <div class="medal-8"></div>
+                            <div class="medal-9"></div>
+                            <div class="medal-10"></div>
+                        </div>
+                        <div class="medal-list">
+                            <div class="medal-fc-1"></div>
+                            <div class="medal-fc-2"></div>
+                            <div class="medal-fc-3"></div>
+                            <div class="medal-fc-4"></div>
+                            <div class="medal-fc-5"></div>
+                            <div class="medal-fc-6"></div>
+                            <div class="medal-fc-7"></div>
+                        </div>
+
+
+
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class="main-card beatmaps-card">
+                    <div class="main-top">
+                        <div class="title">Beatmaps</div>
+                        <div class="move">
+                            <span class="fas fa-bars"></span>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="main-item-title">
+                            <div class="text">Favourite Beatmaps</div>
+                            <div class="value">33</div>
+                        </div>
+                        <div class="beatmap-list fav">
+                           <div class="beatmap-placeholder">
+                            <div class="beatmap-card">
+                                <div class="beatmap-front">
+                                    <div class="beatmap-icon">
+                                        <span class="fas fa-play"></span>
+                                        <div class="icon-display"></div>
+                                    </div>
+                                    <div class="beatmap-infos">
+                                        <div class="beatmap-title">A song for you! you? you!!</div>
+                                        <div class="beatmap-artist">by μ's</div>
+                                        <div class="beatmap-mapper">mapped by <a href="#">Bokamin</a></div>
+                                        <div class="beatmap-status">
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-play-circle"></span>
+                                                <div>55,9K</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-heart"></span>
+                                                <div>145</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-check-circle"></span>
+                                                <div>26 Jun 2023</div>
+                                            </div>
+                                        </div>
+                                        <div class="beatmap-class">
+                                            <div class="classfi">RANKED</div>
+                                            <div class="mode-std"></div>
+                                            <div class="diff-count">
+                                                <div class="diff-7"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="beatmap-back">
+                                    <div class="fas fa-heart"></div>
+                                    <div class="fas fa-file-download"></div>
+                                </div>
+                            </div>
+                           </div>
+                           <div class="beatmap-placeholder">
+                            <div class="beatmap-card">
+                                <div class="beatmap-front">
+                                    <div class="beatmap-icon">
+                                        <span class="fas fa-play"></span>
+                                        <div class="icon-display"></div>
+                                    </div>
+                                    <div class="beatmap-infos">
+                                        <div class="beatmap-title">Connect</div>
+                                        <div class="beatmap-artist">by ClariS</div>
+                                        <div class="beatmap-mapper">mapped by <a href="#">Azunyan-</a></div>
+                                        <div class="beatmap-status">
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-play-circle"></span>
+                                                <div>164,5K</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-heart"></span>
+                                                <div>244</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-check-circle"></span>
+                                                <div>3 Apr 2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="beatmap-class">
+                                            <div class="classfi">RANKED</div>
+                                            <div class="mode-std"></div>
+                                            <div class="diff-count">
+                                                <div class="diff-5"></div>
+                                                <div class="diff-6"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="beatmap-back">
+                                    <div class="fas fa-heart"></div>
+                                    <div class="fas fa-file-download"></div>
+                                </div>
+                            </div>
+                           </div>
+                           <div class="beatmap-placeholder">
+                            <div class="beatmap-card">
+                                <div class="beatmap-front">
+                                    <div class="beatmap-icon">
+                                        <span class="fas fa-play"></span>
+                                        <div class="icon-display"></div>
+                                    </div>
+                                    <div class="beatmap-infos">
+                                        <div class="beatmap-title">MELODY FLAG</div>
+                                        <div class="beatmap-artist">by Inori Minase</div>
+                                        <div class="beatmap-mapper">mapped by <a href="#">Sekai</a></div>
+                                        <div class="beatmap-status">
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-play-circle"></span>
+                                                <div>410k</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-heart"></span>
+                                                <div>450</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-check-circle"></span>
+                                                <div>7 Mar 2022</div>
+                                            </div>
+                                        </div>
+                                        <div class="beatmap-class">
+                                            <div class="classfi">RANKED</div>
+                                            <div class="mode-std"></div>
+                                            <div class="diff-count">
+                                                <div class="diff-5"></div>
+                                                <div class="diff-6"></div>
+                                                <div class="diff-6"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="beatmap-back">
+                                    <div class="fas fa-heart"></div>
+                                    <div class="fas fa-file-download"></div>
+                                </div>
+                            </div>
+                           </div>
+                           <div class="beatmap-placeholder">
+                            <div class="beatmap-card">
+                                <div class="beatmap-front">
+                                    <div class="beatmap-icon">
+                                        <span class="fas fa-play"></span>
+                                        <div class="icon-display"></div>
+                                    </div>
+                                    <div class="beatmap-infos">
+                                        <div class="beatmap-title">Aozora Jumping Heart</div>
+                                        <div class="beatmap-artist">by Aqours</div>
+                                        <div class="beatmap-mapper">mapped by <a href="#">Sakurauchi Riko</a></div>
+                                        <div class="beatmap-status">
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-play-circle"></span>
+                                                <div>1.2MK</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-heart"></span>
+                                                <div>425</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-check-circle"></span>
+                                                <div>24 Dec 2019</div>
+                                            </div>
+                                        </div>
+                                        <div class="beatmap-class">
+                                            <div class="classfi">RANKED</div>
+                                            <div class="mode-std"></div>
+                                            <div class="diff-count">
+                                                <div class="diff-1"></div>
+                                                <div class="diff-2"></div>
+                                                <div class="diff-3"></div>
+                                                <div class="diff-4"></div>
+                                                <div class="diff-5"></div>
+                                                <div class="diff-6"></div>
+                                                <div class="diff-7"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="beatmap-back">
+                                    <div class="fas fa-heart"></div>
+                                    <div class="fas fa-file-download"></div>
+                                </div>
+                            </div>
+                           </div>
+                           <div class="beatmap-placeholder">
+                            <div class="beatmap-card">
+                                <div class="beatmap-front">
+                                    <div class="beatmap-icon">
+                                        <span class="fas fa-play"></span>
+                                        <div class="icon-display"></div>
+                                    </div>
+                                    <div class="beatmap-infos">
+                                        <div class="beatmap-title">WATER BLUE NEW WORLD</div>
+                                        <div class="beatmap-artist">by Aqours</div>
+                                        <div class="beatmap-mapper">mapped by <a href="#">Atalanta</a></div>
+                                        <div class="beatmap-status">
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-play-circle"></span>
+                                                <div>216,6K</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-heart"></span>
+                                                <div>257</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-check-circle"></span>
+                                                <div>7 Feb 2018</div>
+                                            </div>
+                                        </div>
+                                        <div class="beatmap-class">
+                                            <div class="classfi">RANKED</div>
+                                            <div class="mode-std"></div>
+                                            <div class="diff-count">
+                                                <div class="diff-5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="beatmap-back">
+                                    <div class="fas fa-heart"></div>
+                                    <div class="fas fa-file-download"></div>
+                                </div>
+                            </div>
+                           </div>
+                           <div class="beatmap-placeholder">
+                            <div class="beatmap-card">
+                                <div class="beatmap-front">
+                                    <div class="beatmap-icon">
+                                        <span class="fas fa-play"></span>
+                                        <div class="icon-display"></div>
+                                    </div>
+                                    <div class="beatmap-infos">
+                                        <div class="beatmap-title">Omoi yo Hitotsu ni Nare</div>
+                                        <div class="beatmap-artist">by Aqours</div>
+                                        <div class="beatmap-mapper">mapped by <a href="#">Sakurauchi Riko</a></div>
+                                        <div class="beatmap-status">
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-play-circle"></span>
+                                                <div>209,7K</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-heart"></span>
+                                                <div>273</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-check-circle"></span>
+                                                <div>25 Feb 2020</div>
+                                            </div>
+                                        </div>
+                                        <div class="beatmap-class">
+                                            <div class="classfi">RANKED</div>
+                                            <div class="mode-std"></div>
+                                            <div class="diff-count">
+                                                <div class="diff-2"></div>
+                                                <div class="diff-3"></div>
+                                                <div class="diff-4"></div>
+                                                <div class="diff-5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="beatmap-back">
+                                    <div class="fas fa-heart"></div>
+                                    <div class="fas fa-file-download"></div>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                        <div class="show-more">
+                            <div class="show">
+                                <span class="fas fa-chevron-down"></span>
+                                <div>SHOW MORE</div>
+                                <span class="fas fa-chevron-down"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="main-item-title">
+                            <div class="text">Graveyarded Beatmaps</div>
+                            <div class="value">5</div>
+                        </div>
+                        <div class="beatmap-list gav">
+                           <div class="beatmap-placeholder">
+                            <div class="beatmap-card">
+                                <div class="beatmap-front">
+                                    <div class="beatmap-icon">
+                                        <span class="fas fa-play"></span>
+                                        <div class="icon-display"></div>
+                                    </div>
+                                    <div class="beatmap-infos">
+                                        <div class="beatmap-title">Nijiiro Passions</div>
+                                        <div class="beatmap-artist">by Nijigasaki High School Idol Clube</div>
+                                        <div class="beatmap-mapper">mapped by <a href="#">Yoshiko-kun</a></div>
+                                        <div class="beatmap-status">
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-play-circle"></span>
+                                                <div>60</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-heart"></span>
+                                                <div>0</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-check-circle"></span>
+                                                <div>28 May 2023</div>
+                                            </div>
+                                        </div>
+                                        <div class="beatmap-class .gav">
+                                            <div class="classfi">GRAVEYARD</div>
+                                            <div class="mode-std"></div>
+                                            <div class="diff-count">
+                                                <div class="diff-5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="beatmap-back">
+                                    <div class="fas fa-heart"></div>
+                                    <div class="fas fa-file-download"></div>
+                                </div>
+                            </div>
+                           </div>
+                           <div class="beatmap-placeholder">
+                            <div class="beatmap-card">
+                                <div class="beatmap-front">
+                                    <div class="beatmap-icon">
+                                        <span class="fas fa-play"></span>
+                                        <div class="icon-display"></div>
+                                    </div>
+                                    <div class="beatmap-infos">
+                                        <div class="beatmap-title">Ao to Natsu</div>
+                                        <div class="beatmap-artist">by Poppin'Party</div>
+                                        <div class="beatmap-mapper">mapped by <a href="#">Yoshiko-kun</a></div>
+                                        <div class="beatmap-status">
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-play-circle"></span>
+                                                <div>196</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-heart"></span>
+                                                <div>0</div>
+                                            </div>
+                                            <div class="beatmap-status-item">
+                                                <span class="fa-fw fas fa-check-circle"></span>
+                                                <div>7 Apr 2022</div>
+                                            </div>
+                                        </div>
+                                        <div class="beatmap-class .gav">
+                                            <div class="classfi">GRAVEYARD</div>
+                                            <div class="mode-std"></div>
+                                            <div class="diff-count">
+                                                <div class="diff-5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="beatmap-back">
+                                    <div class="fas fa-heart"></div>
+                                    <div class="fas fa-file-download"></div>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                        <div class="show-more">
+                            <div class="show">
+                                <span class="fas fa-chevron-down"></span>
+                                <div>SHOW MORE</div>
+                                <span class="fas fa-chevron-down"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-card historical-card">
+                    <div class="main-top">
+                        <div class="title">Historical</div>
+                        <div class="move">
+                            <span class="fas fa-bars"></span>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="main-item-title">
+                            <div class="text">Play History</div>
+                        </div>
+                        <div class="history-graphic plays">
+                            <div class="graphic-Y">
+                                <span>6000</span>
+                                <span>4000</span>
+                                <span>2000</span>
+                                <span>1000</span>
+                                <span>0</span>
+                            </div>
+                            <div class="graphic-X">
+                                <span>2019</span>
+                                <span>2020</span>
+                                <span>2021</span>
+                                <span>2022</span>
+                                <span>2023</span>
+                                <span>2024</span>
+                                <span>2025</span>
+                                <span>2026</span>
+                            </div>
+                            <svg viewBox="0 0 1000 100" preserveAspectRatio="none" class="history-svg">
+                                <g class="grade-fundo">
+                                    <line x1="0" y1="25" x2="1000" y2="25"></line>
+                                    <line x1="0" y1="50" x2="1000" y2="50"></line>
+                                    <line x1="0" y1="75" x2="1000" y2="75"></line>
+                                    <line x1="0" y1="100" x2="1000" y2="100"></line>
+                                    <line x1="0" y1="0" x2="0" y2="100"></line>
+                                    <line x1="125" y1="0" x2="125" y2="100"></line>
+                                    <line x1="250" y1="0" x2="250" y2="100"></line>
+                                    <line x1="375" y1="0" x2="375" y2="100"></line>
+                                    <line x1="500" y1="0" x2="500" y2="100"></line>
+                                    <line x1="625" y1="0" x2="625" y2="100"></line>
+                                    <line x1="750" y1="0" x2="750" y2="100"></line>
+                                    <line x1="875" y1="0" x2="875" y2="100"></line>
+                                    <line x1="1000" y1="0" x2="1000" y2="100"></line>
+                                </g>
+                                <polyline class="play-history" points="0,98 12,88 23,100 35,97 47,100 58,99 70,100 82,96 93,100 105,92 116,92 128,95 140,70 151,50 163,40 174,2 186,8 198,30 209,49 221,50 233,65 244,38 256,42 267,40 279,41 291,70 302,65 314,78 326,73 337,76 349,85 360,84 372,69 384,81 395,92 407,92 419,82 430,82 442,72 453,92 465,92 477,58 488,88 500,88 512,77 523,98 535,88 547,89 558,94 570,99 581,96 593,100 605,98 616,100 628,100 640,88 651,91 663,98 674,92 686,99 698,100 709,100 721,99 733,100 744,88 756,90 767,98 779,92 791,100 802,100 814,99 826,100 837,88 849,89 860,97 872,91 884,72 895,91 907,100 919,95 930,90 942,100 953,94 965,99 977,97 988,100 1000,99"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="main-item-title">
+                            <div class="text">Most Played Beatmaps</div>
+                            <div class="value">5,439</div>
+                        </div>
+                        <div class="most-beatmap-list">
+                            <div class="most-beatmap">
+                                <div class="most-beatmap-icon"></div>
+                                <div class="most-beatmap-items">
+                                    <div class="most-beatmap-text">
+                                        <div class="most-beatmap-title">Shinzou o Sasageyo! [TV Size] [Hard] by Linked Horizon</div>
+                                        <div class="most-beatmap-mapper">mapped by Monstrata</div>
+                                    </div>
+                                    <div class="most-beatmap-play">
+                                        <span class="fas fa-play"></span>
+                                        <div>991</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="most-beatmap">
+                                <div class="most-beatmap-icon"></div>
+                                <div class="most-beatmap-items">
+                                    <div class="most-beatmap-text">
+                                        <div class="most-beatmap-title">Kani*Do-Luck! (TV Size) [A I U R A !] by Aiurabu</div>
+                                        <div class="most-beatmap-mapper">mapped by Azunya-</div>
+                                    </div>
+                                    <div class="most-beatmap-play">
+                                        <span class="fas fa-play"></span>
+                                        <div>639</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="most-beatmap">
+                                <div class="most-beatmap-icon"></div>
+                                <div class="most-beatmap-items">
+                                    <div class="most-beatmap-text">
+                                        <div class="most-beatmap-title">Zen Zen Zense [Insane] by Gom (HoneyWorks)</div>
+                                        <div class="most-beatmap-mapper">mapped by MugiwaraSekai</div>
+                                    </div>
+                                    <div class="most-beatmap-play">
+                                        <span class="fas fa-play"></span>
+                                        <div>519</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="most-beatmap">
+                                <div class="most-beatmap-icon"></div>
+                                <div class="most-beatmap-items">
+                                    <div class="most-beatmap-text">
+                                        <div class="most-beatmap-title">Black Rover (TV Size) [Extreme] by Vickeblanka</div>
+                                        <div class="most-beatmap-mapper">mapped by Sotarks</div>
+                                    </div>
+                                    <div class="most-beatmap-play">
+                                        <span class="fas fa-play"></span>
+                                        <div>512</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="most-beatmap">
+                                <div class="most-beatmap-icon"></div>
+                                <div class="most-beatmap-items">
+                                    <div class="most-beatmap-text">
+                                        <div class="most-beatmap-title">WONDERFUL WONDER (TV Size) [Simple Heart] by EDOGA-SULLIVAN</div>
+                                        <div class="most-beatmap-mapper">mapped by Kuki1537</div>
+                                    </div>
+                                    <div class="most-beatmap-play">
+                                        <span class="fas fa-play"></span>
+                                        <div>441</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="show-more">
+                                <div class="show">
+                                    <span class="fas fa-chevron-down"></span>
+                                    <div>SHOW MORE</div>
+                                    <span class="fas fa-chevron-down"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="main-item-title">
+                            <div class="text">Recent Plays (24h)</div>
+                            <div class="value">0</div>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="main-item-title">
+                            <div class="text">Replays Watched History</div>
+                        </div>
+                        <div class="history-graphic replay">
+                            <div class="graphic-Y">
+                                <span>3</span>
+                                <span>2</span>
+                                <span>1</span>
+                                <span>0</span>
+                            </div>
+                            <div class="graphic-X">
+                                <span>2020</span>
+                                <span>2021</span>
+                                <span>2022</span>
+                                <span>2023</span>
+                                <span>2024</span>
+                                <span>2025</span>
+                                <span>2026</span>
+                            </div>
+                            <svg viewBox="0 0 1000 100" preserveAspectRatio="none" class="history-svg">
+                                <g class="grade-fundo">
+                                    <line x1="0" y1="25" x2="1000" y2="25"></line>
+                                    <line x1="0" y1="50" x2="1000" y2="50"></line>
+                                    <line x1="0" y1="75" x2="1000" y2="75"></line>
+                                    <line x1="0" y1="100" x2="1000" y2="100"></line>
+                                    <line x1="0" y1="0" x2="0" y2="100"></line>
+                                    <line x1="125" y1="0" x2="125" y2="100"></line>
+                                    <line x1="250" y1="0" x2="250" y2="100"></line>
+                                    <line x1="375" y1="0" x2="375" y2="100"></line>
+                                    <line x1="500" y1="0" x2="500" y2="100"></line>
+                                    <line x1="625" y1="0" x2="625" y2="100"></line>
+                                    <line x1="750" y1="0" x2="750" y2="100"></line>
+                                    <line x1="875" y1="0" x2="875" y2="100"></line>
+                                    <line x1="1000" y1="0" x2="1000" y2="100"></line>
+                                </g>
+                                <polyline class="play-history" points="
+                                0,33.33 15.87,66.67 31.75,66.67 47.62,100 63.49,0 79.37,66.67 95.24,100 111.11,66.67 126.98,66.67 142.86,100 365.08,100 380.95,66.67 396.83,100 984.13,100 1000,66.67"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="main-item-title">
+                            <div class="text">Most Watched Replays</div>
+                            <div class="value">8</div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="S"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">Everthing will freeze by UNDEAD CORPORATION</div>
+                                    <div class="music-detail">
+                                        <div class="mode-std"></div>
+                                        <div class="diff">Time Freeze </div>
+                                        <div class="time">10 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-roxo"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-classic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">98,65%</div>
+                                    <div class="points">704pp</div>
+                                </div>
+                            </div>
+                            <div class="play-pp">
+                                <span class="fas fa-eye"></span>
+                                <span>457,107</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="A"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">A FOOL MOON NIGHT by The Koxx</div>
+                                    <div class="music-detail">
+                                        <div class="mode-std"></div>
+                                        <div class="diff">Friendofox's Galaxy</div>
+                                        <div class="time">6 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-roxo"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-classic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">98,65%</div>
+                                    <span class="fas fa-heart"></span>
+                                </div>
+                            </div>
+                            <div class="play-pp">
+                                <span class="fas fa-eye"></span>
+                                <span>268,969</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="SX"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">The Big Black by The Quick Brown Fox</div>
+                                    <div class="music-detail">
+                                        <div class="mode-std"></div>
+                                        <div class="diff">WHO'S AFRAID OF THE BIG BLACK</div>
+                                        <div class="time">7 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-hidden"></span>
+                                    </div>
+                                </div>
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-perfect"></span>
+                                    </div>
+                                </div>
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-roxo"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-classic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">100,0%</div>
+                                    <div class="points">407pp</div>
+                                </div>
+                            </div>
+                            <div class="play-pp">
+                                <span class="fas fa-eye"></span>
+                                <span>134,368</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="S"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">RAISE MY SWORD by GALNERYUS</div>
+                                    <div class="music-detail">
+                                        <div class="mode-std"></div>
+                                        <div class="diff">A THOUSAND FLAMES</div>
+                                        <div class="time">7 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-hardrock"></span>
+                                    </div>
+                                </div>
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-roxo"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-classic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">98,51%</div>
+                                    <div class="points">882pp</div>
+                                </div>
+                            </div>
+                            <div class="play-pp">
+                                <span class="fas fa-eye"></span>
+                                <span>61,514</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="play-card">
+                            <div class="play-music">
+                                <div class="music-rank">
+                                    <div class="X"></div>
+                                </div>
+                                <div class="music-info">
+                                    <div class="music-title">UNION!! by 765 MILLION ALLSTARS</div>
+                                    <div class="music-detail">
+                                        <div class="mode-std"></div>
+                                        <div class="diff">We are all MILLION!!</div>
+                                        <div class="time">6 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-mod">
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-doubletime"></span>
+                                    </div>
+                                </div>
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-laranja"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-hidden"></span>
+                                    </div>
+                                </div>
+                                <div class="mod">
+                                    <div class="fundo">
+                                        <span class="fundo-roxo"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="mod-classic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play-result">
+                                <div class="play-info">
+                                    <div class="acc">98,96%</div>
+                                    <div class="points">885pp</div>
+                                </div>
+                            </div>
+                            <div class="play-pp">
+                                <span class="fas fa-eye"></span>
+                                <span>12,250</span>
+                            </div>
+                            </div>
+                            <div class="score-more">
+                                <span class="fas fa-ellipsis-v"></span>
+                            </div>
+                        </div>
+                         <div class="show-more">
+                            <div class="show">
+                                <span class="fas fa-chevron-down"></span>
+                                <div>SHOW MORE</div>
+                                <span class="fas fa-chevron-down"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-card recent-card">
+                    <div class="main-top">
+                        <div class="title">Recent</div>
+                        <div class="move">
+                            <span class="fas fa-bars"></span>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div>This user hasn't done anything notable recently!</div>
+                    </div>
+                </div>
+                <div class="main-card kudosu-card">
+                    <div class="main-top">
+                        <div class="title">Kudosu!</div>
+                        <div class="move">
+                            <span class="fas fa-bars"></span>
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="total-kudosu">
+                            Total Kudosu Earned
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="number-kudosu">
+                            1   
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="info-kudosu">
+                            Based on how much of a contribution the user has made to beatmap moderation. See this page for more information.
+                        </div>
+                    </div>
+                    <div class="main-item">
+                        <div class="gain-kudosu">
+                            <div class="last-kudosu">
+                                Received <a href="#">1 kudosu</a> from obtaining votes in modding post of <a href="#">Zen Zen Zense (Acoustic)</a>
+                            </div>
+                            <div class="time-kudosu">
+                                6 years ago
+                            </div>
+                        </div>
+                    </div>
+                </div>                   
+            </div>
+        </main>
+    </div>
+    <footer class="foot">
+            <div class="foot-top">
+                <a href="#">Rules</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Copyright (DMCA)</a>
+                <a href="#">Server Status</a>
+                <a href="#">Source Code</a>
+            </div>
+            <div class="foot-bot">ppy powered 2007-2026</div>
+    </footer>
+</body>
+
+</html>

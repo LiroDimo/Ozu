@@ -1,0 +1,216 @@
+:root{
+    --font-primary: 'Torus', sans-serif;
+
+    --sub-top-menu-fundo: #00000098;
+    --sub-item-hover: #1b2129;
+    --linear-rank: #e0e0eb,#a3a3c2;
+    --linear-level: #00ff9d, #00ffea;
+    --bar-profile: #1c1719;
+
+    --color-1: #1c1719;
+    --color-2: #2a2226;
+    --color-3: #2e1f25;
+    --color-4: #3d2932;
+    --color-5: #46393f;
+    --color-6: #382e32;
+    --color-7: #54454c;
+    --color-8: #0c0a0b;
+    --color-9: #46393fc1;
+    
+
+    --test: #ffffff;
+    --branco: #fff;
+    --branco-escuro: #f0dbe4;
+    --rosa: #f763a5;
+    --rosa-2: #e80e94;
+    --amarelo: #ffd342;
+    --verde: #b3ff66;
+    --cinza: #a38f98;
+    --prata: #414046;
+
+    --lazer-box-bar: var(--rosa);
+    --community-bar: var(--rosa);
+    --beatmaps-bar: #5fd2ff;
+    --rankings-bar: #23f485;
+    --store-bar: #ff9f4b;
+    --home-bar: #a023f4;
+    --help-bar: #e6d054;
+    --lang-bar: #ff95c5;
+
+    --diff-1: #59ffc5;
+    --diff-2: #c0f855;
+    --diff-3: #fac562;
+    --diff-4: #f84d7c;
+    --diff-5: #b74cc0;
+    --diff-6: #865cd5;
+    --diff-7: #4947b9;
+    --diff-8: #280e55;
+    --diff-9: #080213;
+    --diff-10: #080213;
+
+    --diff-1-text: #0c0a0b;
+    --diff-2-text: #fff421;
+
+    --filter-rosa: filter: brightness(0) saturate(100%) invert(53%) sepia(88%) saturate(1045%) hue-rotate(298deg) brightness(101%) contrast(105%);
+
+    --profile-img: url('https://a.ppy.sh/13675615?1710104345.png');
+    --profile-banner: url('https://assets.ppy.sh/user-profile-covers/13675615/694899bddd5056a7f5c3f013b2a050486de21aba60596bb7d8b8362f29d7c71e.jpeg');
+
+    --triangles: url('https://osu.ppy.sh/assets/images/nav2-background-hue0.1aba1596.png');
+
+    --level-icon: url('icon.png');
+    --player-icon: url('https://osu.ppy.sh/images/icons/profile.svg');
+    --osu-logo-full: url('https://osu.ppy.sh/assets/images/osu-logo-triangles.b1e57c37.svg');
+    --osu-logo-bordas: url('https://osu.ppy.sh/assets/images/osu-logo-white.59d385da.svg');
+
+    --std: url('https://sig.ripple.moe/img/osu.png');
+    --taiko: url('https://osusig.lolicon.app/img/taiko.png');
+    --catch: url('https://joshua-usi.github.io/osw/src/images/catch.png');
+    --mania: url('https://joshua-usi.github.io/osw/src/images/mania.png');
+
+    --SX: url('https://osu.ppy.sh/assets/images/GradeSmall-SS-Silver.6681366c.svg');
+    --SS: url('https://osu.ppy.sh/assets/images/GradeSmall-SS.a21de890.svg');
+    --X: url('https://osu.ppy.sh/assets/images/GradeSmall-S-Silver.811ae28c.svg');
+    --S: url('https://osu.ppy.sh/assets/images/GradeSmall-S.3b4498a9.svg');
+    --A: url('https://osu.ppy.sh/assets/images/GradeSmall-A.d785e824.svg');
+
+    --mod-fundo: url('https://osu.ppy.sh/assets/images/mod-icon.dacd6669.svg');
+    --mod-classic: url('https://osu.ppy.sh/assets/images/mod-classic.f5f25b6c.svg');
+    --mod-hidden: url('https://osu.ppy.sh/assets/images/mod-hidden.823bd26e.svg');
+    --mod-hardrock: url('https://osu.ppy.sh/assets/images/mod-hard-rock.46546bbc.svg');
+    --mod-nightcore: url('https://osu.ppy.sh/assets/images/mod-nightcore.d992ee1a.svg');
+    --mod-doubletime: url('https://osu.ppy.sh/assets/images/mod-double-time.895bdda1.svg');
+    --mod-perfect: url('https://osu.ppy.sh/assets/images/mod-perfect.8c11b369.svg');
+    --mod-flashlight: url('https://osu.ppy.sh/assets/images/mod-flashlight.de7d21b1.svg');
+
+    --medal-rhythm-1: url('https://assets.ppy.sh/medals/web/all-packs-rhythm-1.png');
+    --medal-rhythm-2: url('https://assets.ppy.sh/medals/web/all-packs-rhythm-2.png');
+    --medal-rhythm-3: url('https://assets.ppy.sh/medals/web/all-packs-rhythm-3.png');
+    --medal-rhythm-4: url('https://assets.ppy.sh/medals/web/all-packs-rhythm-4.png');
+
+    --medal-game-1: url('https://assets.ppy.sh/medals/web/all-packs-gamer-1.png');
+    --medal-game-2: url('https://assets.ppy.sh/medals/web/all-packs-gamer-2.png');
+    --medal-game-3: url('https://assets.ppy.sh/medals/web/all-packs-gamer-3.png');
+    --medal-game-4: url('https://assets.ppy.sh/medals/web/all-packs-gamer-4.png');
+
+    --medal-internet-1: url('https://assets.ppy.sh/medals/web/all-packs-internet-1.png');
+    --medal-internet-2: url('https://assets.ppy.sh/medals/web/all-packs-internet-2.png');
+    --medal-internet-3: url('https://assets.ppy.sh/medals/web/all-packs-internet-3.png');
+    --medal-internet-4: url('https://assets.ppy.sh/medals/web/all-packs-internet-4.png');
+
+    --medal-anime-1: url('https://assets.ppy.sh/medals/web/all-packs-anime-1.png');
+    --medal-anime-2: url('https://assets.ppy.sh/medals/web/all-packs-anime-2.png');
+    --medal-anime-3: url('https://assets.ppy.sh/medals/web/all-packs-anime-3.png');
+    --medal-anime-4: url('https://assets.ppy.sh/medals/web/all-packs-anime-4.png');
+
+    --medal-star-10: url('https://assets.ppy.sh/medals/web/osu-skill-pass-10.png');
+    --medal-star-9: url('https://assets.ppy.sh/medals/web/osu-skill-pass-9.png');
+    --medal-star-8: url('https://assets.ppy.sh/medals/web/osu-skill-pass-8.png');
+    --medal-star-7: url('https://assets.ppy.sh/medals/web/osu-skill-pass-7.png');
+    --medal-star-6: url('https://assets.ppy.sh/medals/web/osu-skill-pass-6.png');
+    --medal-star-5: url('https://assets.ppy.sh/medals/web/osu-skill-pass-5.png');
+    --medal-star-4: url('https://assets.ppy.sh/medals/web/osu-skill-pass-4.png');
+    --medal-star-3: url('https://assets.ppy.sh/medals/web/osu-skill-pass-3.png');
+    --medal-star-2: url('https://assets.ppy.sh/medals/web/osu-skill-pass-2.png');
+    --medal-star-1: url('https://assets.ppy.sh/medals/web/osu-skill-pass-1.png');
+
+    --fc-1: url('https://assets.ppy.sh/medals/web/osu-skill-fc-1.png');
+    --fc-2: url('https://assets.ppy.sh/medals/web/osu-skill-fc-2.png');
+    --fc-3: url('https://assets.ppy.sh/medals/web/osu-skill-fc-3.png');
+    --fc-4: url('https://assets.ppy.sh/medals/web/osu-skill-fc-4.png');
+    --fc-5: url('https://assets.ppy.sh/medals/web/osu-skill-fc-5.png');
+    --fc-6: url('https://assets.ppy.sh/medals/web/osu-skill-fc-6.png');
+    --fc-7: url('https://assets.ppy.sh/medals/web/osu-skill-fc-7.png');
+
+    --combo-1: url('https://assets.ppy.sh/medals/web/osu-combo-500.png');
+    --combo-2: url('https://assets.ppy.sh/medals/web/osu-combo-750.png');
+    --combo-3: url('https://assets.ppy.sh/medals/web/osu-combo-1000.png');
+    --combo-4: url('https://assets.ppy.sh/medals/web/osu-combo-2000.png');
+
+    --play-1: url('https://assets.ppy.sh/medals/web/osu-plays-5000.png');
+    --play-2: url('https://assets.ppy.sh/medals/web/osu-plays-15000.png');
+    --play-3: url('https://assets.ppy.sh/medals/web/osu-plays-25000.png');
+    --play-4: url('https://assets.ppy.sh/medals/web/osu-plays-50000.png');
+
+    --medalha-1: url('https://assets.ppy.sh/medals/web/all-intro-fun.png');
+    --medalha-2: url('https://assets.ppy.sh/medals/web/osu-secret-festive.png');
+    --medalha-3: url('https://assets.ppy.sh/medals/web/osu-secret-deception.png');
+    --medalha-4: url('https://assets.ppy.sh/medals/web/all-secret-identity.png');
+    --medalha-5: url('https://assets.ppy.sh/medals/web/all-secret-autocreation.png');
+    --medalha-6: url('https://assets.ppy.sh/medals/web/all-secret-superfan.png');
+    --medalha-7: url('https://assets.ppy.sh/medals/web/all-secret-replica.png');
+
+    --beatmap-you: url('https://assets.ppy.sh/beatmaps/1936120/covers/cover.jpg');
+    --beatmap-coracao: url('https://assets.ppy.sh/beatmaps/593620/covers/cover.jpg');
+    --beatmap-zen: url('https://assets.ppy.sh/beatmaps/503141/covers/cover.jpg');
+    --beatmap-kani: url('https://assets.ppy.sh/beatmaps/894883/covers/cover.jpg');
+    --beatmap-wonder: url('https://assets.ppy.sh/beatmaps/1280506/covers/cover.jpg');
+    --beatmap-trevo: url('https://assets.ppy.sh/beatmaps/781509/covers/cover.jpg');
+
+    --beatmap-you-2: url('love\ BG.jpg');
+    --beatmap-conect-2: url('connect.jpg');
+    --beatmap-flag-2: url('1.jpg');
+    --beatmap-aozora-2: url('newbgiloverikoo.jpg');
+    --beatmap-waterblue-2: url('A\ new\ world.png');
+    --beatmap-songs-2: url('ily\ riko.jpg');
+
+
+    --beatmap-you: url('https://assets.ppy.sh/beatmaps/1936120/covers/cover.jpg');
+    --beatmap-conect: url('https://assets.ppy.sh/beatmaps/1250654/covers/cover.jpg');
+    --beatmap-flag: url('https://assets.ppy.sh/beatmaps/1630848/covers/cover.jpg');
+    --beatmap-aozora: url('https://assets.ppy.sh/beatmaps/611367/covers/cover.jpg');
+    --beatmap-waterblue: url('https://assets.ppy.sh/beatmaps/721656/covers/cover.jpg');
+    --beatmap-songs: url('https://assets.ppy.sh/beatmaps/668084/covers/cover.jpg');
+
+    --betmap-colors: url('https://assets.ppy.sh/beatmaps/1715370/covers/cover.jpg');
+    --betmap-verao:url('https://assets.ppy.sh/beatmaps/1659258/covers/cover.jpg');
+
+    --betmap-colors-2: url('Kasumi\ Fofa.jpg');
+    --betmap-verao-2: url('Popipa.png');
+}
+
+@font-face {
+    font-family: 'Torus';
+    src: url('https://cdn.jsdelivr.net/gh/vaeyo/dotfiles@master/.fonts/OTF/Torus%20Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Torus';
+    src: url('https://cdn.jsdelivr.net/gh/vaeyo/dotfiles@master/.fonts/OTF/Torus%20Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Torus';
+    src: url('https://cdn.jsdelivr.net/gh/vaeyo/dotfiles@master/.fonts/OTF/Torus%20Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+/*
+
+<div class="editar">
+    <span class="fas fa-pen"></span>
+</div>
+
+<div class="more">
+    <span class="fas fa-"></span>
+</div>
+
+<div class="beatmap-down">
+    <div class="beatmap-down-diff">
+        <div class="mode-std"></div>
+        <div class="stars">
+            <span class="fas fa-star"></span>
+            <div>7.12</div>
+        </div>
+        <div class="diff-title">New courage! New song!!</div>
+    </div>
+</div>
+
+*/

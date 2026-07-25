@@ -1,0 +1,620 @@
+/* Icons e Imagens*/
+
+.osu-logo-full, .osu-logo-bordas{
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    position: relative;
+    height: 70px;
+    width: 70px;
+    top: 0;
+    left: 0;
+
+    z-index: 3;
+}
+
+.profile{
+    background-image: var(--profile-img);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+.topbar-profile .profile{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: block;   
+    top: 0;
+    left: 0; 
+}
+
+.player-icon{
+    background-image: var(--player-icon);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 60px;
+    width: 40px;
+}
+
+.head .player-icon{
+    height: 55px;
+    width: 30px;
+}
+
+.profile-banner{
+    background-image: var(--profile-banner);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.5);
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.level-icon{
+    background-image: linear-gradient(135deg, var(--linear-level));
+    mask-image: var(--level-icon);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    position: relative;
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;    
+}
+
+
+/* Map ranj icons */
+
+.SX, .SS, .X, .S, .A{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 44px;
+    height: 22px;
+}
+
+.SX{
+    background-image: var(--SX);
+}
+.SS{
+    background-image: var(--SS);
+}
+.X{
+    background-image: var(--X);
+}
+.S{
+    background-image: var(--S);
+}
+.A{
+    background-image: var(--A);
+}
+
+.music-rank .SX, .music-rank .SS, .music-rank .X, .music-rank .S, .music-rank .A{
+    width: 40px;
+    height: 30px;
+}
+
+/* Icones de jogo (Estao rosa) */
+
+.mode-std, .mode-taiko, .mode-catch, .mode-mania{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0) invert(86%) sepia(10%) saturate(4431%) hue-rotate(289deg) brightness(104%) contrast(96%);
+    width: 20px;
+    height: 20px;
+}
+
+.mode-std{
+    background-image: var(--std);
+    filter: none; /* Ficar branco */
+}
+.mode-taiko{
+    background-image: var(--taiko);
+}
+.mode-catch{
+    background-image: var(--catch);
+}
+.mode-mania{
+    background-image: var(--mania);
+}
+
+.beatmaps-card .mode-std, .beatmaps-card .mode-taiko, .beatmaps-card .mode-catch, .beatmaps-card .mode-mania{
+    width: 14px;
+    height: 14px;
+}
+
+.historical-card .mode-std, .historical-card .mode-taiko, .historical-card .mode-catch, .historical-card .mode-mania{
+    filter: brightness(0) saturate(100%) invert(80%) sepia(100%) saturate(1443%) hue-rotate(321deg) brightness(103%) contrast(101%);
+    margin-top: 2px;
+    width: 12px;
+    height: 12px;
+    
+}
+
+/* Mods*/
+
+.fundo-roxo, .fundo-laranja{
+    background-image: var(--mod-fundo);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 31px;
+    height: 22px;
+    display: block;
+}
+
+.fundo-roxo{
+    filter: brightness(0) saturate(100%) invert(48%) sepia(50%) saturate(3078%) hue-rotate(230deg) brightness(99%) contrast(105%);
+}
+
+.fundo-laranja{
+    filter: brightness(0) saturate(100%) invert(60%) sepia(96%) saturate(1901%) hue-rotate(319deg) brightness(101%) contrast(103%);
+}
+
+.mod-classic, .mod-hidden, .mod-hardrock, .mod-doubletime, .mod-perfect, .mod-nightcore, .mod-flashlight{
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(22%) saturate(3712%) hue-rotate(336deg) brightness(91%) contrast(88%);
+    width: 31px;
+    height: 22px;
+    display: block;
+}
+
+.mod-classic{
+    background-image: var(--mod-classic);
+}
+.mod-hidden{
+    background-image: var(--mod-hidden);
+}
+.mod-hardrock{
+    background-image: var(--mod-hardrock);
+}
+.mod-doubletime{
+    background-image: var(--mod-doubletime);
+}
+.mod-perfect{
+    background-image: var(--mod-perfect);
+}
+.mod-nightcore{
+    background-image: var(--mod-nightcore);
+}
+.mod-flashlight{
+    background-image: var(--mod-flashlight);
+}
+
+.icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.diff-1, .diff-2, .diff-3, .diff-4, .diff-5, .diff-6, .diff-7, .diff-8, .diff-9, .diff-10{
+    margin-left: 2px;
+    border-radius: 20px;
+    height: 15px;
+    width: 6px;
+}
+
+.diff-1{
+    background-color: var(--diff-1);
+}
+.diff-2{
+    background-color: var(--diff-2);
+}
+.diff-3{
+    background-color: var(--diff-3);
+}
+.diff-4{
+    background-color: var(--diff-4);
+}
+.diff-5{
+    background-color: var(--diff-5);
+}
+.diff-6{
+    background-color: var(--diff-6);
+}
+.diff-7{
+    background-color: var(--diff-7);
+}
+.diff-8{
+    background-color: var(--diff-8);
+}
+.diff-9{
+    background-color: var(--diff-9);
+}
+.diff-10{
+    background-color: var(--diff-10);
+}
+
+/* Elementos */
+
+/* Barinha entre o grafico e estatisticas */
+
+.head-profile .linha .bar{
+    background-color: var(--bar-profile);
+    border-radius: 10px;
+    height: 100%;
+    width: 1px;
+}
+
+/* Afters e Befores */
+
+/* Fundo do Search */
+
+.topbar-search .fas:hover::after{
+    content: '';
+    background-color: var(--rosa);
+    border-radius: 50%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+}
+
+/* Fundo de seleçao do menu */
+
+.topbar-menu-icon:hover::after{
+    content: '';
+    position: absolute;
+    background-color: var(--branco);
+    opacity: 0.3;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+}
+
+.topbar-notfication .topbar-menu-icon:hover::after{
+    border-radius: 50px;
+    width: 50px;
+    height: 40px;
+}
+
+.topbar-profile .profile:hover::before{
+    content: '';
+    position: absolute;
+    border: 3px solid var(--branco);
+    border-radius: 50%; 
+    width: 100%;
+    height: 100%;
+
+    top: 51%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+}
+
+/* Escurece o fundo quando clicla nas opções do menu */
+
+.topbar-menu:hover::after{
+    content: '';
+    background-color: var(--sub-top-menu-fundo);
+    border-bottom: 2px solid var(--rosa);
+    position: fixed;
+    width: 100vw;
+    height: 310px;
+    top: 0;
+    left: 0;
+
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Caixa de fundo */
+
+.sub-item:hover::before{
+    content: '';
+    background-color: var(--sub-item-hover);
+    border-radius: 5px;
+    position: absolute;
+    width: calc(100% + 40px);
+    height: 25px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+}
+
+/* Grande maioria */
+
+.topbar-menu-lang .sub-item:hover::before{
+background-color: var(--color-2);
+}
+
+/* Laze mode */
+
+.profile-sub-mid .sub-item:hover::before{
+background-color: transparent;
+}
+
+/* Opções de perfil */
+
+.profile-sub-bot .sub-item:hover::before{
+    background-color: var(--color-2);
+    width: calc(100% + 20px);
+    left: 33%;
+}
+
+/* Barrinha lateral */
+
+.sub-item::after{
+    content: '';
+    background-color: transparent;
+    border-radius: 5px;
+    position: absolute;
+    height: calc(100% - 3px);
+    width: 4px;
+
+    top: 50%;
+    left: -10%;
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+}
+
+/* Opçoes do menu */
+
+.topbar-menu:nth-child(2) .sub-item:hover::after{
+    background-color: var(--home-bar);
+}
+.topbar-menu:nth-child(3) .sub-item:hover::after{
+    background-color: var(--beatmaps-bar);
+}
+.topbar-menu:nth-child(4) .sub-item:hover::after{
+    background-color: var(--rankings-bar);
+}
+.topbar-menu:nth-child(5) .sub-item:hover::after{
+    background-color: var(--community-bar);
+}
+.topbar-menu:nth-child(6) .sub-item:hover::after{
+    background-color: var(--store-bar);
+}
+.topbar-menu:nth-child(7) .sub-item:hover::after{
+    background-color: var(--help-bar);
+}
+
+/* Opções de lingua ativa */
+
+.topbar-menu-lang .sub-item:nth-child(1)::after{
+    background-color: var(--lang-bar);
+    left: -5%;
+    width: 3px;
+}
+
+/* Opções de lingua */
+
+.topbar-menu-lang .sub-item:hover:after{
+    background-color: var(--lang-bar);
+    left: -5%;
+    width: 3px;
+}
+
+/* Laze mode */
+
+.topbar-profile .sub-item:hover::after{
+    background-color: var(--rosa);
+    width: 3px;
+}
+
+/* Opções de  perfil */
+
+.profile-sub-bot .sub-item:hover::after{
+    left: -18%;
+}
+
+/* Traço sobre a frase no head (info)*/
+
+.head-top-item.active::after{
+    content: '';
+    background-color: var(--rosa);
+    border-radius: 3px;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+
+    top: 175%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 2;
+}
+
+/* Botão de editar */
+
+.editar{
+    color: var(--branco);
+    font-size: 12px;
+    position: relative;    
+    cursor: pointer;
+}
+
+.editar::before{
+    content: '';
+    background-color: var(--color-7);
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+}
+
+/* Botao de mais */
+
+.more{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.more > *{
+    position: relative;
+    z-index: 998;
+}
+
+.more::before{
+    content: '';
+    background-color: var(--color-7);
+    border-radius: 50%;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    z-index: 2;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Level completo */
+
+.level-bar::before{
+    content: '';
+    background-color: var(--rosa);
+    border-radius: 10px;
+    position: absolute;
+    width: 91%;
+    height: 6px;
+}
+
+/* Linha sobre o titulo do me e afins */
+
+.main-top .title::before{
+    content: '';
+    background-color: var(--rosa);
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    z-index: -1;
+    
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Traço do lado do Score e afins */
+
+.main-item-title .text::before{
+    content: '';
+    display: inline-block;
+    background-color: var(--rosa);
+    align-self: stretch;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-block: calc(6px / 2); 
+    width: 3px;
+}
+
+/* Desenho do card */
+
+/* Triangulo */
+
+.play-pp::before{
+    content: "";
+    background-color: var(--color-7);
+    position: absolute;
+    height: 42.3px;
+    width: 10px;
+    z-index: 2;
+
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(0 0,100% 50%,0 100%);
+}
+
+/* Cinza claro que vai por cima */
+
+.play-card::before{
+    content: "";
+    background-color: var(--color-7);
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+    width: 88%;
+    z-index: 1;
+
+    left: 44%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Linha superior sobre as medalhas */
+
+.medal-card .main-item-title::after{
+    content: '';
+    position: absolute;
+    background-color: var(--rosa);
+    width: 90%;
+    height: 3px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+/* Tira a barrinha dos titulos */
+
+.medal-card .last .main-item-title::after{
+    display: none;
+}
+
+.medal-card .main-item-title .text::before{
+    content: '';
+    display: none;
+}
+
+/* Volta a Barrinha*/
+
+.medal-card .last .main-item-title .text::before{
+    content: '';
+    display: inline-block;
+}
+
+/* Fundo das ultimas medalhas */
+
+.last::before {
+    content: "";
+    background-color: var(--color-5);
+    position: absolute;
+    width: 980px;
+    height: 130%;
+    z-index: -1;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
