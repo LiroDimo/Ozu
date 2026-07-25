@@ -606,15 +606,15 @@ background-color: transparent;
 
 /* Fundo das ultimas medalhas */
 
-.last::before {
+.medal-card::before {
     content: "";
     background-color: var(--color-5);
     position: absolute;
-    width: 980px;
-    height: 130%;
+    width: 100%;
+    height: 150px;
     z-index: -1;
     
-    top: 50%;
+    top: 16%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
