@@ -20,6 +20,7 @@ body{
     
     .topbar{
         background-color: var(--rosa-2);
+    }
 
     .profile-banner{
         min-width: width:100%; !important;
